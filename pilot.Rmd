@@ -1,0 +1,33 @@
+---
+title: "Pilot Financial Spending Map"
+author: "Ben Burnley"
+date: "7/6/2022"
+output: pdf_document
+---
+
+# Introduction 
+```{r}
+# settings and packages 
+library(tidyverse)
+library(jsonlite)
+```
+
+
+
+# Data Input 
+```{r}
+# importing data 
+Assistance_Subawards <- read_csv("~/Downloads/epa_2021/Assistance_Subawards_2022-07-06_H13M57S36_1.csv")
+Contracts_Subawards <- read_csv("~/Downloads/epa_2021/Contracts_Subawards_2022-07-06_H13M57S34_1.csv")
+Assistance_PrimeAwardSummaries <- read_csv("~/Downloads/epa_2021/Assistance_PrimeAwardSummaries_2022-07-06_H13M57S26_1.csv")
+Contracts_PrimeAwardSummaries <- read_csv("~/Downloads/epa_2021/Contracts_PrimeAwardSummaries_2022-07-06_H13M57S15_1.csv")
+
+data_dictionary <- jsonlite::fromJSON("~/Downloads/USAspending-data-catalog.json")
+```
+
+
+# Cleaning 
+```{r}
+
+```
+
